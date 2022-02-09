@@ -1,0 +1,70 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+
+public class hospital extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					hospital frame = new hospital();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public hospital() {
+		setTitle("Hospital");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 482, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Donaci\u00F3n(S/.)");
+		lblNewLabel.setBounds(10, 41, 76, 14);
+		contentPane.add(lblNewLabel);
+		
+		JButton btnErase = new JButton("Borrar");
+		btnErase.setBounds(208, 37, 76, 23);
+		contentPane.add(btnErase);
+		
+		textField = new JTextField();
+		textField.setBounds(96, 38, 86, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(10, 88, 446, 162);
+		contentPane.add(textArea);
+		
+		JButton btnProcess = new JButton("Procesar");
+		btnProcess.setBounds(294, 37, 76, 23);
+		contentPane.add(btnProcess);
+		
+		JButton btnClose = new JButton("Cerrar");
+		btnClose.setBounds(380, 37, 76, 23);
+		contentPane.add(btnClose);
+	}
+}
