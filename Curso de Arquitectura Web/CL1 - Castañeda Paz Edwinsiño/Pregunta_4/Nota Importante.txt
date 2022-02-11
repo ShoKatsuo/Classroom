@@ -1,0 +1,1 @@
+En caso la reproducción automatica no ocurre por algun bloqueo de los navegadores basados en chrome. Es recomendable usar firefox y activar la reproduccion automatica o ver las paginas usando la extension go live (haciendo click sobre la extencion y no presionando F5)
