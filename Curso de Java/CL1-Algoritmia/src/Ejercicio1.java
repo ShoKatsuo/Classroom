@@ -15,6 +15,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.awt.event.ActionEvent;
+import java.awt.Cursor;
 
 public class Ejercicio1 extends JFrame {
 
@@ -41,6 +42,8 @@ public class Ejercicio1 extends JFrame {
 	 * Create the frame.
 	 */
 	public Ejercicio1() {
+		setLocationByPlatform(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\ShoKatsuo\\GitHub\\Classroom\\Curso de Java\\CL1-Algoritmia\\Image\\dar-dinero.png"));
 		setTitle("Reparto");
 		setBounds(100, 100, 366, 346);
@@ -67,19 +70,20 @@ public class Ejercicio1 extends JFrame {
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Monto");
-		lblNewLabel.setBounds(119, 30, 46, 14);
+		lblNewLabel.setBounds(115, 30, 46, 14);
 		panel_1.add(lblNewLabel);
 		lblNewLabel.setForeground(new Color(255, 255, 255));
 		lblNewLabel.setFont(new Font("Roboto", Font.BOLD, 12));
 		
 		txtMonto = new JTextField();
-		txtMonto.setBounds(165, 28, 86, 20);
+		txtMonto.setBounds(160, 28, 86, 20);
 		panel_1.add(txtMonto);
 		txtMonto.setBackground(new Color(208, 189, 244));
 		txtMonto.setFont(new Font("Roboto", Font.PLAIN, 11));
 		txtMonto.setColumns(10);
 		
 		JButton btnProcess = new JButton("Procesar");
+		btnProcess.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnProcess.setBounds(130, 252, 89, 23);
 		panel.add(btnProcess);
 		btnProcess.addActionListener(new ActionListener() {
@@ -94,33 +98,43 @@ public class Ejercicio1 extends JFrame {
 				monto = Double.parseDouble(txtMonto.getText());
 				
 				//Proceso
-				bellavista = 0.10 * monto;
-				la_punta = 0.15 * monto;
-				la_perla = 0.20 * monto;
-				mi_peru = 0.15 * monto;
-				ventanilla = 0.40 * monto;
+				bellavista = 0.10 * monto; //Bellavista recibe el 20% del monto
+				la_punta = 0.15 * monto; //La punta recibe el 15 % del monto
+				la_perla = 0.20 * monto; //La perla recibe el 20% del monto
+				mi_peru = 0.15 * monto; // Mi Perú recibe el 15% del monto
+				ventanilla = 0.40 * monto; // Ventanilla recibe el 40% del monto
 				
 				// Salida de datos
-				txtArea.setText("Se enviará las siguientes cantidades: "+"\n");
-				txtArea.append("Bellavista: "+"\t"+df.format(bellavista)+"\n");
-				txtArea.append("La Punta: "+"\t"+df.format(la_punta)+"\n");
-				txtArea.append("La Perla: "+"\t"+df.format(la_perla)+"\n");
-				txtArea.append("Mi Perú: "+"\t"+df.format(mi_peru)+"\n");
-				txtArea.append("Ventanilla: "+"\t"+df.format(ventanilla)+"\n");
+				txtArea.setText("Se enviará las siguientes cantidades: "+"\n"); //Un subtitulo que dará introduccón a una lista de resultados
+				txtArea.append("Bellavista: "+"\t"+df.format(bellavista)+"\n"); //Se muestra en pantalla el importe de Bellavista
+				txtArea.append("La Punta: "+"\t"+df.format(la_punta)+"\n"); //Se muestra en pantalla el importe de La Punta
+				txtArea.append("La Perla: "+"\t"+df.format(la_perla)+"\n"); //Se muestra en pantalla el importe de La Perla
+				txtArea.append("Mi Perú: "+"\t"+df.format(mi_peru)+"\n"); //Se muestra en pantalla el importe de Mi Perú
+				txtArea.append("Ventanilla: "+"\t"+df.format(ventanilla)+"\n"); //Se muestra en pantalla el importe de Ventanilla
 			}
 		});
 		btnProcess.setBackground(new Color(132, 88, 179));
 		btnProcess.setForeground(new Color(255, 255, 255));
 		btnProcess.setFont(new Font("Roboto", Font.PLAIN, 11));
 		
+		//Se añade un botón de nombre Borrar, al cual se le modificará la tonalidad de la letra, fondo , tamaño y tipografia
 		JButton btnDelete = new JButton("Borrar");
+		btnDelete.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtMonto.setText("");
+				txtArea.setText("");
+			}
+		});
 		btnDelete.setBounds(10, 252, 89, 23);
 		panel.add(btnDelete);
 		btnDelete.setForeground(new Color(255, 255, 255));
 		btnDelete.setBackground(new Color(132, 88, 179));
 		btnDelete.setFont(new Font("Roboto", Font.PLAIN, 11));
 		
+		//Se añade un botón de nombre cerrar, al cual se le modificará la tonalidad de la letra, fondo , tamaño y tipografia
 		JButton btnCerrar = new JButton("Cerrar");
+		btnCerrar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnCerrar.setBounds(249, 252, 89, 23);
 		panel.add(btnCerrar);
 		btnCerrar.setForeground(new Color(255, 255, 255));
