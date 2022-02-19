@@ -18,24 +18,33 @@
             text-align: center;
             color: darkblue;
         }
+        .banner {
+            width: 100%;
+        }
         p {
             text-align: justify;
             font-size: 13pt;
         }
-        img {
+        div img {
             width: 20%;
         }
-        p div img {
-            align-items: center;
+        .solo {
+            display: flex;
+            justify-content: center;
         }
-        div img {
-            align-items: center;
+        .grupo-img {
+            display: flex;
+            justify-content: center;
+        }
+        p a {
+            font-size: 20pt;
+            color: red;
         }
     </style>
 </head>
 <body>
 	<h1>Comida de la Costa</h1>
-    <img src="../imagenes/bannerCosta.jpg" alt="banner">
+    <img class="banner" src="../imagenes/bannerCosta.jpg" alt="banner">
     <p>
         Hoy en día cuando un visitante o incluso un peruano se sientan a degustar 
         alguno de los platos peruanos, quizá no sabe que está experimentando el 
@@ -45,9 +54,11 @@
         culturas culinarias. No sólo tiene hondas raíces pre incas, incas y coloniales 
         hispanas, sino también que a lo largo de su historia ha incorporado estilos 
         gastronómicos mulatos, europeos y orientales.
-        <div>
-            <img src="../imagenes/comida_1.jpg" alt="ceviche">
-        </div>
+    </p>
+    <div class="solo">
+        <img src="../imagenes/comida_1.jpg" alt="ceviche">
+    </div>
+    <p>
         Cada región costera, diferente en fauna y flora, adapta su cocina de acuerdo a 
         los productos de sus aguas. El chupe de camarón; plato originario y típico del 
         departamento de Arequipa, es uno de los platos más refinados de la costa 
@@ -60,7 +71,7 @@
         del Perú, como el suspiro a la limeña, los picarones, el turrón, la mazamorra
         morada, entre otros.
     </p>
-    <div>
+    <div class="grupo-img">
         <img src="../imagenes/comida_2.jpg">
         <img src="../imagenes/comida_3.jpg">
         <img src="..//imagenes/comida_4.jpg">
