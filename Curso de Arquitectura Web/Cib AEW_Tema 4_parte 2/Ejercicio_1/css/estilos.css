@@ -1,0 +1,15 @@
+body {
+  background-color: azure;
+}
+h1,
+h2 {
+  text-align: center;
+  color: darkblue;
+}
+.banner {
+  width: 100%;
+}
+.texto {
+  text-align: justify;
+  font-size: 13pt;
+}

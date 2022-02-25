@@ -1,0 +1,30 @@
+* {
+  color: grey;
+}
+h1 {
+  text-align: center;
+  color: red;
+}
+p em {
+  color: blue;
+}
+p strong {
+  color: green;
+}
+p em strong {
+  color: crimson;
+}
+p.parrafo1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: peru;
+}
+p.parrafo2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.destacado {
+  font-style: italic;
+  color: tomato;
+}
+#especial {
+  letter-spacing: 10px;
+}
