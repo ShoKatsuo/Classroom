@@ -1,0 +1,8 @@
+Tienda de electrodomésticos
+
+            Somos una empresa dedicada a la venta y reparación de electrodomésticos.
+            Además de estos productos de venta on-line, ponemos a su disposicion una 
+            exposición de mas de 300 metros donde les ofrecemos un gran surtido en todo 
+            tipo de electrodomésticos, también disponemos de servicio técnico propio, 
+            reparamos todo tipo de electrodomésticos. En aire acondicionado, les 
+            ofrecemos la instalación y reparación de los mismos.

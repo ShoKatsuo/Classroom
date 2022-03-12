@@ -1,0 +1,24 @@
+.title {
+  text-align: center;
+}
+center img {
+  width: 1500px;
+  height: 300px;
+}
+.texto {
+  text-align: center;
+}
+.imagenes {
+  width: 300px;
+  height: 200px;
+  display: flex;
+}
+.listas {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.links {
+  text-align: center;
+}
