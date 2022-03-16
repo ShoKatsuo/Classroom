@@ -1,24 +1,60 @@
-.title {
+.container1 h1 {
   text-align: center;
+  color: darkblue;
+  background-color: #98fb98;
 }
-center img {
-  width: 1500px;
-  height: 300px;
+.container1 img {
+  max-width: 1900px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  justify-content: center;
 }
-.texto {
-  text-align: center;
+.container2 {
+  text-align: justify;
+  font-size: 13pt;
+  font-family: Verdana;
 }
-.imagenes {
-  width: 300px;
-  height: 200px;
+.container3 img {
+  width: 15%;
+  height: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid #3aa299;
+}
+.container4 {
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
-.listas {
-  text-align: center;
+.container4 h3 {
+  background-color: #98fb98;
+  color: darkblue;
+}
+.lista1 {
+  background-color: #c0c0c0;
+  border: 2px solid white;
+}
+.lista2 {
+  background-color: darkcyan;
+  border: 2px solid white;
+}
+.lista3 {
+  background-color: orange;
+  border: 2px solid white;
+}
+.lista4 {
+  background-color: #3aa299;
+  border: 2px solid white;
 }
 h2 {
   text-align: center;
+  background-color: #98fb98;
+  color: darkblue;
 }
-.links {
+.container5 {
   text-align: center;
+  font-size: 20pt;
+  font-family: Calibri;
 }
