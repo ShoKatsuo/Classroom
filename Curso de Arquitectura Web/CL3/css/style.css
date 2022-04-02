@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+body {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+#contenedor {
+    width: 95%;
+    margin: 30px auto;
+}
+
+/*  header  */
+header {
+    background-color: transparent;
+}
+
+header h1 {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 30pt;
+
+}
+
+header img {
+    width: 100%;
+    height: 350px;
+    vertical-align: bottom;
+}
+
+/*  nav  */
+nav {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/*  main  */
+main {
+    display: flex;
+}
+
+/*  aside */
+aside {
+    width: 20%;
+    padding: 20px;
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+    background-blend-mode: normal, color-burn;
+}
+
+/*  aside izquierda  */
+aside h3 {
+    padding: 20px 0px;
+}
+
+aside a {
+    padding: 5px 0px;
+    display: block;
+    color: firebrick;
+    text-decoration: none !important;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/*  aside derecha  */
+.as-derecho {
+    width: 20%;
+}
+
+aside iframe {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
+.as-derecho h3 {
+    text-align: center;
+    font-size: 15pt;
+}
+
+/*  section  */
+section {
+    width: 60%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+section figure {
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    background-color: #fff;
+
+}
+
+section figure img {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+section figure figcaption {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*  footer  */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: white;
+}
