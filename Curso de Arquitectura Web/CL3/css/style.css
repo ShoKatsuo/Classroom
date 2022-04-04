@@ -68,7 +68,7 @@ aside a {
     padding: 5px 0px;
     display: block;
     color: firebrick;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 aside a:hover {
